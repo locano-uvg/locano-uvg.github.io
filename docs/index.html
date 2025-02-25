@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOCANO-UVG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-white font-sans">
+    <header>
+      <nav class="bg-gray-800 p-4">
+        <div class="max-w-3xl mx-auto flex justify-between items-center">
+          <h1 class="text-2xl font-bold">Listado proyectos</h1>
+          <a
+            href="https://github.com/locano-uvg/"
+            class="text-blue-400 hover:underline"
+            >Repositorio</a
+          >
+        </div>
+      </nav>
+    </header>
+    <div class="max-w-3xl mx-auto p-6" style="min-height: calc(100vh - 145px);">
+      <p class="text-center text-gray-400 mb-4">
+        Explora los proyectos.
+      </p>
+
+      <div class="space-y-4">
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <button
+            class="w-full text-left font-semibold text-lg"
+            onclick="toggleDropdown('cifrados')"
+          >
+          ▶ Cifrados
+          </button>
+          <div id="cifrados" class="hidden mt-2 text-gray-300">
+            <p>
+              Repositorio diseñado para la gestión de material del curso Cifrados del año 2025. En este repositorio se encontraran los ejercicios y ejemplos de la clase, asi como la documentacion del contenido de la clase.
+            </p>
+            <a
+            href="https://locano-uvg.github.io/cifrados-25/"
+            class="text-blue-400 hover:underline"
+            >Contenido</a>
+
+            <a
+            href="https://github.com/locano-uvg/cifrados-25"
+            class="text-blue-400 hover:underline ml-4 "
+            >Repo</a>
+          </div>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <button
+            class="w-full text-left font-semibold text-lg"
+            onclick="toggleDropdown('stw')"
+          >
+          ▶ Sistemas y Tecnologías Web
+          </button>
+          <div id="stw" class="hidden mt-2 text-gray-300">
+            <p>
+              Repositorio diseñado para la gestión de material del curso Sistemas y Tenologias Web, del año 2025. En este repositorio se encontraran los ejercicios y ejemplos de la clase, asi como la documentacion del contenido de la clase.
+            </p>
+            <a
+            href="https://locano-uvg.github.io/stw-25/"
+            class="text-blue-400 hover:underline"
+            >Contenido</a>
+
+            <a
+            href="https://github.com/locano-uvg/stw-25"
+            class="text-blue-400 hover:underline ml-4 "
+            >Repo</a>
+          </div>
+        </div>
+
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <button
+            class="w-full text-left font-semibold text-lg"
+            onclick="toggleDropdown('ctf-intro')"
+          >
+          ▶ CTF Intro Ciphers
+          </button>
+          <div id="ctf-intro" class="hidden mt-2 text-gray-300">
+            <p>
+              Repositorio diseñado para conocer y practicar conceptos básicos de cifrados como:
+            </p>
+            <ul>
+              <li>- Cifrado Cesar</li>
+              <li>- Cifrado ROT13</li>
+              <li>- Cifrado Vigenere</li>
+              <li>- Análisis de frecuencia</li>
+            </ul>
+            <a
+            href="https://locano-uvg.github.io/ctf_intro_ciphers/"
+            class="text-blue-400 hover:underline"
+            >Contenido</a>
+
+            <a
+            href="https://github.com/locano-uvg/ctf_intro_ciphers"
+            class="text-blue-400 hover:underline ml-4 "
+            >Repo</a>
+          </div>
+        </div>
+
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <button
+            class="w-full text-left font-semibold text-lg"
+            onclick="toggleDropdown('ctf-one')"
+          >
+          ▶ CTF One Piece
+          </button>
+          <div id="ctf-one" class="hidden mt-2 text-gray-300">
+            <p>
+              Repositorio diseñado para conocer y practicar conceptos básicos de cifrados simétricos como:
+            </p>
+            <ul>
+              <li>- XOR </li>
+              <li>- RC4</li>
+              <li>- Análisis estadístico</li>
+              <li>- PRNG inseguro</li>
+              <li>- Chacha20</li>
+              <li>- Cifrado combinado</li>
+            </ul>
+            <a
+            href="https://locano-uvg.github.io/ctf_onepice_symmetric_cipher/"
+            class="text-blue-400 hover:underline"
+            >Contenido</a>
+
+            <a
+            href="https://github.com/locano-uvg/ctf_onepice_symmetric_cipher"
+            class="text-blue-400 hover:underline ml-4 "
+            >Repo</a>
+          </div>
+        </div>
+
+        <div class="bg-gray-800 p-4 rounded-lg">
+          <button
+            class="w-full text-left font-semibold text-lg"
+            onclick="toggleDropdown('more')"
+          >
+          ▶ More
+          </button>
+          <div id="more" class="hidden mt-2 text-gray-300">
+            <p>
+              Puedes encontrar más proyectos en el repositorio de GitHub.
+            </p>
+            <a
+            href="https://github.com/locano-uvg/"
+            class="text-blue-400 hover:underline ml-4 "
+            >Repo</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <footer class="bg-gray-800 p-4 text-center mt-6">
+      <p class="text-gray-400"></p>
+        © 2025 Ludwing Cano | Universidad del Valle de Guatemala
+      </p>
+    </footer>
+
+    <script>
+      function toggleDropdown(id) {
+        const content = document.getElementById(id);
+        content.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
