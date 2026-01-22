@@ -45,7 +45,8 @@ function renderPresentations(searchTerm = '') {
   });
 
   filteredPresentations.forEach((presentation, index) => {
-    const card = createCardHTML(presentation, index);
+    const card = document.createElement('div');
+    card.innerHTML = createCardHTML(presentation, index);
     card.style.animationDelay = `${index * 100}ms`;
     grid.appendChild(card);
   });
