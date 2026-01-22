@@ -26,9 +26,9 @@ export const presentations = [
   {
     id: "ctf-intro-ciphers",
     title: "CTF Intro Ciphers",
-    description: "Repositorio diseñado para la gestión de material del curso CTF Intro Ciphers del año 2026. En este repositorio se encontrarán los ejercicios y ejemplos de la clase, así como la documentación del contenido de la clase.",
-    content: "https://locano-uvg.github.io/ctf-intro-ciphers-26/",
-    repository: "https://github.com/locano-uvg/ctf-intro-ciphers-26",
+    description: "Repositorio donde se encontrará la documentación para superar los retos de CTF Intro Ciphers.",
+    content: "https://locano-uvg.github.io/ctf_intro_ciphers/",
+    repository: "https://github.com/locano-uvg/ctf_intro_ciphers",
     active: true
   }
 ]
